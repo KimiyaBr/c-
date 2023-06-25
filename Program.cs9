@@ -1,0 +1,21 @@
+using System;
+namespace Project1{
+class test{
+public static void Main(){
+  double midtermGrade, finalGrade, Percent;
+  Console.Write("Nomre midterm: ");
+  midtermGrade = Convert.ToDouble(Console.ReadLine());
+  Console.Write("Nomre final: ");
+  finalGrade = Convert.ToDouble(Console.ReadLine());
+  Percent = CalcFinalGrade(midtermGrade, finalGrade);
+  Console.WriteLine("final percent hast: {0}%", Percent);
+        }
+        static double CalcFinalGrade(double midtermGrade, double finalGrade)
+        {
+            double Percent;
+            Percent = finalGrade * 0.65 + midtermGrade * 0.35;
+            return Percent;
+        }
+    }
+}
+
