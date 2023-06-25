@@ -3,7 +3,7 @@ namespace Program1
 {
 class test
 {
-static double Calculate(double x, double y)
+ public static double Calculate(double x, double y)
 {
    return Math.Sqrt(Math.Abs(x) + Math.Sqrt(Math.Pow(x, 2)));
         }
