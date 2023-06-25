@@ -1,0 +1,28 @@
+using System;
+namespace Project1{
+class test{
+Public static void Main(){
+  Console.WriteLine("Enter the length, width, and height of the cube:");
+    double length = Convert.ToDouble(Console.ReadLine());
+    double width = Convert.ToDouble(Console.ReadLine());
+    double height = Convert.ToDouble(Console.ReadLine());
+    double volume = CalculateVolume(length, width, height);
+    double surfaceArea = CalculateSurfaceArea(length, width, height);
+      Console.WriteLine("The volume of the cube is: " + volume);
+      Console.WriteLine("The surface area of the cube is: " + surfaceArea);
+      Console.ReadLine();
+        }
+        static double CalculateVolume(double length, double width, double height)
+        {
+            double volume = length * width * height;
+            return volume;
+        }
+
+        static double CalculateSurfaceArea(double length, double width, double height)
+        {
+            double surfaceArea = 2 * ((length * width) + (length * height) + (width * height));
+            return surfaceArea;
+        }//end function
+    }//end class
+}//end namespace
+
