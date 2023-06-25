@@ -10,7 +10,7 @@ namespace Project1 {
             {
                 for (int j = 0; j <=2; j++)
                 {
-                    M[i, j] = int.Parse(Console.ReadLine());
+                    M[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
 
