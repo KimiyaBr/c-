@@ -1,0 +1,22 @@
+using System;
+namespace Program1
+{
+class test
+{
+static double Calculate(double x, double y)
+{
+   return Math.Sqrt(Math.Abs(x) + Math.Sqrt(Math.Pow(x, 2)));
+        }
+static void Main() 
+{
+   Console.WriteLine("This program calculates the result of a math function.");
+  Console.WriteLine("Please enter the value of x:");
+    double x = double.Parse(Console.ReadLine());
+  Console.WriteLine("Please enter the value of y:");
+    double y = double.Parse(Console.ReadLine());
+    double result = Calculate(x, y);
+  Console.WriteLine($"The result of the function with x = {x} and y = {y} is {result}");
+  Console.ReadKey();
+        }
+    }
+}
