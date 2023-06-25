@@ -1,0 +1,18 @@
+using System;
+
+namespace Project1
+{
+class test
+    {
+ static void Main()
+        {
+  Console.WriteLine("Do adad vared konid:");
+     int num1 = Convert.ToInt32(Console.ReadLine());
+      int num2 = Convert.ToInt32(Console.ReadLine()); 
+       int sum = num1 + num2;
+   Console.WriteLine($"The sum of {num1} and {num2} is {sum}.");
+     Console.ReadKey();
+        }// end function
+    }//end class
+}//end namespace
+
