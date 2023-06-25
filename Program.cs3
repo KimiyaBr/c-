@@ -1,0 +1,23 @@
+
+using System;
+
+namespace Project1 {
+    class test {
+        static void Main() {
+            int[,] M = new int[3, 3]; 
+            Console.WriteLine("Vared konid :");
+            for (int i = 0; i <=2; i++)
+            {
+                for (int j = 0; j <=2; j++)
+                {
+                    M[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            int det = M[0, 0] * ((M[1, 1] * M[2, 2]) - (M[1, 2] * M[2, 1])) - M[0, 1] * ((M[1, 0] * M[2, 2]) - (M[1, 2] * M[2, 0]))+ M[0, 2] * ((M[1, 0] * M[2, 1]) - (M[1, 1] * M[2, 0]));
+
+            Console.WriteLine("Determinan M hast: "+det);
+            Console.ReadKey();
+        }
+    }
+}
