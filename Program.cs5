@@ -2,25 +2,19 @@ using System;
 
 namespace Program1
 {
-    class test
+class test
     {
-        static void Main()
+publicstatic void Main()
         {
-            Console.WriteLine(" x ra vared konid:");
-
-            double x = Convert.ToDouble(Console.ReadLine()); 
-
-            double result = Function(x); 
-
-            Console.WriteLine($"The result of x^2 + 2x - 4 is: {result}");
-
-            Console.ReadKey();
+     Console.WriteLine(" x ra vared konid:");
+        double x = Convert.ToDouble(Console.ReadLine()); 
+        double result = Function(x); 
+        Console.WriteLine($"The result of x^2 + 2x - 4 is: {result}");
+        Console.ReadKey();
         }
-
         static double Function(double x)
         {
             double result = Math.Pow(x, 2) + (2 * x) - 4;
-
             return result; 
         }
     }
